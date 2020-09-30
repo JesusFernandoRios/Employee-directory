@@ -1,0 +1,18 @@
+[
+    {"id": 1, "name": "Zach Smith", "email":"zachfake@email.com", "phone": "230-232-2112"},
+    {"id": 2, "name": "Jenna Taylor", "email":"Jenna02@email.com", "phone": "548-565-4751"},
+    {"id": 3, "name": "David Zepeda", "email":"Zepedafake@email.com", "phone": "230-654-4554"},
+    {"id": 4, "name": "Anthony Williams", "email":"anthonyW@email.com", "phone": "230-784-5547"},
+    {"id": 5, "name": "Rick Sepulveda", "email":"Rickyz@email.com", "phone": "230-123-4654"},
+    {"id": 6, "name": "Carlos Vega", "email":"Carlos2221@email.com", "phone": "230-111-2697"},
+    {"id": 7, "name": "Michael Smith", "email":"Michael009s@email.com", "phone": "230-228-7954"},
+    {"id": 8, "name": "Stephanie Real", "email":"Stephrules@email.com", "phone": "546-445-5423"},
+    {"id": 9, "name": "Ramon Estrada", "email":"RamonTrada@email.com", "phone": "230-545-4654"},
+    {"id": 10, "name": "Monica Farzi", "email":"Farzimo221@email.com", "phone": "230-998-4315"},
+    {"id": 11, "name": "Esteban Ratoe", "email":"EstebanRatoe@email.com", "phone": "230-134-7985"},
+    {"id": 12, "name": "Sam Rambo", "email":"Samsam12@email.com", "phone": "230-468-4468"},
+    {"id": 13, "name": "Juan Molina", "email":"juanoloco@email.com", "phone": "230-132-7894"},
+    {"id": 14, "name": "Leonel Cuevas", "email":"leodecuevas@email.com", "phone": "230-484-1315"},
+    {"id": 15, "name": "George Maze", "email":"George1255@email.com", "phone": "230-232-4487"},
+    {"id": 16, "name": "Ashley Stone", "email":"ashleystone2233@email.com", "phone": "230-549-6458"}
+]
