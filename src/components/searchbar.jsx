@@ -1,11 +1,15 @@
-import React, {useState} from 'react'
+import React, {useState,useEffect} from 'react'
 import employee from '../employees.json'
 
 
-const Search = () => {
+function Search () {
 
     const[search , setSearch] = useState('')
     const call = employee
+
+    useEffect(() => {
+
+    })
 
 
     function updateSearch({target}){
