@@ -1,11 +1,8 @@
-import React,{useState} from 'react'
-import employees from '../employees.json'
+import React from 'react'
 import './style/content.css'
-import Search from './searchbar'
 
-function Content () {
+function Content ({employee}) {
 
-    const [employee, setEmployees] =useState(employees)
 
     return(
         <table> 

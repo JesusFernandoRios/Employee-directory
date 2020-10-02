@@ -1,15 +1,8 @@
-import React, {useState,useEffect} from 'react'
+import React from 'react'
 import employee from '../employees.json'
 
 
-function Search () {
-
-    const[search , setSearch] = useState('')
-    const call = employee
-
-    useEffect(() => {
-
-    })
+function Search ({setSearch, search}) {
 
 
     function updateSearch({target}){
@@ -17,11 +10,11 @@ function Search () {
         const searchTerm = target.value
 
         console.log(searchTerm)
-        console.log(call)
         
         // used for updating the value in the search input, so it always equals exactly what is saved in state
-        setSearch(searchTerm)
+        setSearch(searchTerm + "")
     }
+    
     return(
         <section>
             <div className="input-group mb-3">
