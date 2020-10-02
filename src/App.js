@@ -8,13 +8,6 @@ function App() {
   const [employee , setEmployee] = useState(employees)
   const [search, setSearch] = useState('')
   const [filter, setFilter] = useState(employee)
-  // filtered employee
-  
-  
-  useEffect(() => {
-    
-  })
-  
   
   return (
     <div className="container">

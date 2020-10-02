@@ -12,7 +12,7 @@ function Search ({setSearch, search,employee,setEmployee, setFilter}) {
         setSearch(searchTerm)
         
         setFilter(employee.filter(res =>
-            res.name.includes(searchTerm)))
+            res.name.toLowerCase().includes(searchTerm)))
     }
     
     return(
@@ -25,9 +25,6 @@ function Search ({setSearch, search,employee,setEmployee, setFilter}) {
                 onChange={updateSearchHandler}
                 value={search}
                 />
-                <div className="input-group-append">
-                    <span>{search}</span>
-                </div>
             </div>
         </section>
     )
