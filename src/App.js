@@ -1,4 +1,4 @@
-import React, {useEffect, useState}  from 'react';
+import React, {useState}  from 'react';
 import Content from './components/content';
 import Header from './components/header'
 import Search from './components/searchbar'
@@ -19,15 +19,9 @@ function App() {
       employee={employee}
       setFilter={setFilter}
       />
-      <Content filtered={filter} employee={employee}/>
+      <Content filtered={filter} setFilter={setFilter}/>
     </div>
   );
 }
 
 export default App;
-
-// employees stuff
-
-// filter employees
-//     start with all emplyee stuff
-//     use the includes
