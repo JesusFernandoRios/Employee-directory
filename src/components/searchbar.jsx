@@ -1,19 +1,18 @@
 import React from 'react'
 
-function Search ({setSearch, search,employee,setEmployee}) {
+function Search ({setSearch, search,employee,setEmployee, setFilter}) {
 
 
     function updateSearchHandler({target}){
-        // just using for readability
+        
         const searchTerm = target.value
 
         console.log(target.value)
         
-        // used for updating the value in the search input, so it always equals exactly what is saved in state
         setSearch(searchTerm)
-        setEmployee(employee.filter(res =>
-            res.name === searchTerm
-        ))
+        
+        setFilter(employee.filter(res =>
+            res.name.includes(searchTerm)))
     }
     
     return(
