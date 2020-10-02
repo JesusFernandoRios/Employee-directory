@@ -6,7 +6,8 @@ import friends from './employees.json'
 
 function App() { 
   const [employee , setEmployee] = useState(friends)
-  const [search, setSearch] = useState()
+  const [search, setSearch] = useState('')
+  const [filter, setFilter] = useState([])
   
   return (
     <div className="container">
@@ -14,6 +15,8 @@ function App() {
       <Search
       setSearch={setSearch}
       search={search}
+      setEmployee={setEmployee}
+      employee={employee}
       />
       <Content employee={employee}/>
     </div>
