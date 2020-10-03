@@ -1,7 +1,7 @@
 import React from 'react'
 import './style/content.css'
 
-function Content ({filtered, setFilter}) {
+function Content ({filtered}) {
 
 
     return(

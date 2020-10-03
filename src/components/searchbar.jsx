@@ -1,14 +1,12 @@
 import React from 'react'
 
-function Search ({setSearch, search,employee,setEmployee, setFilter}) {
+function Search ({setSearch, search, employee, setFilter}) {
 
 
     function updateSearchHandler({target}){
         
         const searchTerm = target.value
-
-        console.log(target.value)
-        
+    
         setSearch(searchTerm)
         
         setFilter(employee.filter(res =>
