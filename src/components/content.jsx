@@ -1,18 +1,21 @@
 import React from 'react'
 import './style/content.css'
 
-function Content ({filtered}) {
+function Content ({filter, setFilter, employee, setEmployee}) {
 
+    
 
     return(
         <table>
+            
             <tbody>
+                
                 <tr>
                     <th className="center">Name</th>
                     <th className="center">Email</th>
                     <th className="center">Phone</th>
                 </tr>
-                {filtered.map(e => 
+                {filter.map(e => 
             
                     <tr key={e.id} >
                         <td>

@@ -5,9 +5,15 @@ import Search from './components/searchbar'
 import employees from './employees.json'
 
 function App() { 
+  
+
   const [employee , setEmployee] = useState(employees)
   const [search, setSearch] = useState('')
   const [filter, setFilter] = useState(employee)
+  
+  
+  
+  
   
   return (
     <div className="container">
@@ -18,8 +24,13 @@ function App() {
       setEmployee={setEmployee}
       employee={employee}
       setFilter={setFilter}
+      filter={filter}
       />
-      <Content filtered={filter} setFilter={setFilter}/>
+      <Content 
+      employee={employee} 
+      setEmployee={setEmployee} 
+      filter={filter} 
+      setFilter={setFilter}/>
     </div>
   );
 }
