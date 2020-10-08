@@ -18,8 +18,9 @@ function App() {
       setEmployee={setEmployee}
       employee={employee}
       setFilter={setFilter}
+      filter={filter}
       />
-      <Content filtered={filter} setFilter={setFilter}/>
+      <Content filter={filter} setFilter={setFilter}/>
     </div>
   );
 }

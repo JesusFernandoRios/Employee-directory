@@ -1,8 +1,7 @@
 import React from 'react'
 import './style/content.css'
 
-function Content ({filtered}) {
-
+function Content ({filter}) {
 
     return(
         <table>
@@ -12,7 +11,7 @@ function Content ({filtered}) {
                     <th className="center">Email</th>
                     <th className="center">Phone</th>
                 </tr>
-                {filtered.map(e => 
+                {filter.map(e => 
             
                     <tr key={e.id} >
                         <td>
