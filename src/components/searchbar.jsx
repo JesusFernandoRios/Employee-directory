@@ -1,6 +1,6 @@
 import React from 'react'
 
-function Search ({setSearch, search, employee, setFilter, filter,setEmployee}) {
+function Search ({setSearch, search, employee, setFilter, filter, setEmployee}) {
 
 
     function updateSearchHandler({target}){
@@ -25,6 +25,13 @@ function Search ({setSearch, search, employee, setFilter, filter,setEmployee}) {
     }
 
     
+    const sortBtn = () => {
+
+        let newFilter = filter.sort((a, b) => a.name !== b.name ? a.name < b.name ? -1 : 1 : 0);
+        setEmployee(newFilter)
+        console.log(newFilter)
+    }
+    
     return(
         <section>
             <div className="input-group mb-3">
@@ -35,7 +42,7 @@ function Search ({setSearch, search, employee, setFilter, filter,setEmployee}) {
                 onChange={updateSearchHandler}
                 value={search}
                 />
-                <button onClick={sortEmployee}>Sort Alphabetically</button>
+                <button onClick={sortBtn}>Sort Alphabetically</button>
             </div>
         </section>
     )

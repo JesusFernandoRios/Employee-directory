@@ -5,9 +5,15 @@ import Search from './components/searchbar'
 import employees from './employees.json'
 
 function App() { 
+  
+
   const [employee , setEmployee] = useState(employees)
   const [search, setSearch] = useState('')
   const [filter, setFilter] = useState(employee)
+  
+  
+  
+  
   
   return (
     <div className="container">

@@ -5,7 +5,9 @@ function Content ({filter}) {
 
     return(
         <table>
+            
             <tbody>
+                
                 <tr>
                     <th className="center">Name</th>
                     <th className="center">Email</th>
